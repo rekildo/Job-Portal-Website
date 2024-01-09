@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\saura\OneDrive\Desktop\Capstone project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3956361881.index
+\Job-Portal\src\main\resources
+C:\Users\saura\OneDrive\Desktop\Capstone project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2417421253.index
+\Job-Portal\src\main\java

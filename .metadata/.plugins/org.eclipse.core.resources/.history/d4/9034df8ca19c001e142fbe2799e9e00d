@@ -1,0 +1,28 @@
+<%@page import="java.util.List"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="com.dao.JobDAO"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page is ELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+12- <head>
+<meta charset="ISO-8859-1">
+<title>User: View Jobs</title>
+<%@include file="all_component/allcss.jsp"%>
+</head>
+<body style="background-color: #f0f1f2;">
+<c:if test="${empty userobj }">
+<c: redirect url="Login.jsp" />
+</c:if>
+<%@include file="all_component/navbar.jsp"%>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h5 class="text-center text-primary">All Jobs</h5>
+<c:if test="${not empty succMsg }">
+<h4 class="text-center text-danger">${succMsg }</h4>
+<c: remove var="succMsg" />
+</c:if>
+<div class="card">

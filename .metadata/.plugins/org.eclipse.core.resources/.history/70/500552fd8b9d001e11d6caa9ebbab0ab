@@ -1,0 +1,9 @@
+package com.servlet;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet('/update_profile')
+public class UpdateUserServlet  extends HttpServlet{
+
+}

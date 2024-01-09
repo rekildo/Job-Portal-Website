@@ -1,0 +1,31 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.entity.Jobs "%>
+<%@page import="java.util.List"%>
+<%@page import="com.dao.JobDAO"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ page isELIgnored="false"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User: View Jobs</title>
+<%@include file="all_component/all_css.jsp"%>
+</head>
+<body style="background-color: #f0f1f2;">
+	<c:if test="${empty userobj}">
+		<c: redirect url="Login.jsp" />
+	</c:if>
+	<%@include file="all_component/navbar.jsp"%>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h5 class="text-center text-primary">All Jobs</h5>
+				<%
+				String loc = request.getParameter("loc");
+				String cat = request.getParameter("cat");
+				String msg = "";
+				

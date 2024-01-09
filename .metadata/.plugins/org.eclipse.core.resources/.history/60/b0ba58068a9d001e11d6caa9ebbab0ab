@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ page isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Profile page</title>
+<%@include file="all_component/all_css.jsp"%>
+</head>
+<body style="background-color: #f7f7f7;">
+	<c:if test="${empty userobj}">
+		<c:redirect url="Login.jsp" />
+		</c: if>
+		<%@include file="all_component/navbar.jsp"%>
+		<div class="continer-fluid">
+			<div class="row p-4">
+				<div class="col-md-4 offset-md-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="text-center">
+								<i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>
+								<h5>Edit Profile</h5>
+							</div>
+							<form action="update_profile" method="post">

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.entity.Jobs"/>
+    <fullyQualifiedTypeName name="com.dao.JobDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="com.dao.UserDAO"/>
+    <fullyQualifiedTypeName name="com.DB.DBConnect"/>
+    <fullyQualifiedTypeName name="com.entity.User"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+</qualifiedTypeNameHistroy>
